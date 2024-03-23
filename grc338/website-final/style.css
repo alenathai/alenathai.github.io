@@ -1,0 +1,217 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(index-background-7th-revision.png) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+	max-width: 80em;
+	margin: auto;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+	background-color: rgb(245, 222, 179);
+	max-width: 80em;
+	margin: auto;
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the0 class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 1em 2em 3em;
+}
+
+img {
+    width: 100%; /*Please leave this line.*/
+    display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 15em auto;
+	background: rgb(81, 51, 119);
+	padding: 1em 0.5em;
+}
+
+h1 {
+	width: 15em;
+}
+
+h2 {
+	font-family: ccsignlanguage, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 2em;
+	margin: 1.5rem 0em 1rem;
+	border-bottom: 2.5px solid rgb(81, 51, 119);
+}
+
+h2.noborder {
+	border-bottom: none;
+}
+
+h3 {
+	font-family: urbane-rounded, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+	font-size: 1.5em;
+	margin: 1rem 0em 1rem;
+}
+
+h4 {
+	font-family: urbane-rounded, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 1.2em;
+}
+
+body {
+	font-family: "urbane-rounded", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+nav ul  {
+	text-align: right;
+	max-width: 1fr;
+}
+	
+ul li 	{
+	list-style-type: none;
+}
+
+figure {
+	margin-bottom: 1em;
+}
+
+main.menu ul {
+	margin: 1.5em 0em 2.5em;
+}	
+
+main.menu ul li {
+	margin: 0em 0em 1em;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+}
+
+p {
+	margin: 1em 0em 1em;
+	font-size: 1em;
+	line-height: 125%;
+}
+	
+p.about {
+	line-height: 150%;
+}
+
+p.description {
+	grid-column: 1/3;
+	margin: 0em;
+	font-family: urbane-rounded, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-size: 1em;
+	letter-spacing: 0.075em;
+}
+	
+p.price {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: rgb(81, 51, 119);
+	text-align: right;
+	margin: 0em;
+	font-family: urbane-rounded, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+	
+nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 1em;
+}
+	
+nav ul li a {
+	color: rgb(250,250, 250);
+	padding: 0.25em 0.25em;
+}
+
+nav ul li.selected a {
+	color: rgb(81, 51, 119);
+	background-color: rgb(250, 250, 250);
+	border-radius: 30px;
+}
+
+p.slogan {
+	font-size: 4rem;
+	font-family: ccsignlanguage, sans-serif;
+	font-weight: 500;
+	font-style: italic;
+	margin: 0.75em 0em 2em;
+}
+	
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 3rem; 
+	box-sizing: border-box;
+	padding: 1em 0.5em;
+	background: rgb(81, 51, 119);
+	color: rgb(250, 250, 250);
+}
+
+address {
+	line-height: 175%;
+}
+
+address.index {
+	font-weight: 300;
+	letter-spacing: 0.1em;
+}
+
+footer p {
+	margin: 0;
+	font-size: 1em;
+}
+
+@media screen and (min-width: 60em) {
+	nav ul li {
+		display: inline;
+		font-size: 1.5em;
+		margin: 1em 0.25em;
+
+	}
+
+	nav ul {
+		padding: 2em 1.25em;
+	}
+
+	body {
+		background-color: rgb(245, 222, 179);
+	}
+
+	article {
+		max-width: 50em;
+		margin: auto;
+	}
+
+	main.menu ul {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding-top: 0em;
+		grid-gap: 0.25em 4em;
+		column-gap: 2em;
+	}
+}
