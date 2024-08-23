@@ -211,6 +211,7 @@ div.container, div.home-container {
 
     section.secondary-story {
         display: flex;
+        margin-top: 0;
     }
 
     section.secondary-story a {
