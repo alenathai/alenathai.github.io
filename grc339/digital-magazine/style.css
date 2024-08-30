@@ -3,7 +3,9 @@
 html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
 
 body {
-    font-family: sans-serif;
+    font-family: guyot-sans, sans-serif;
+    font-weight: 200;
+    background-color: #F1E7E5;
 }
 
 header {
@@ -11,14 +13,15 @@ header {
 }
 
 h1 {
-    width: 6em;
+    width: 17em;
     padding-bottom: 1em;
 }
 
 nav {
-    font-weight: bold;
-    color: #557799;
+    font-weight: 700;
+    color: #7A0000;
     line-height: 1.3em;
+    text-transform: uppercase;
 }
 
 img {
@@ -31,17 +34,24 @@ a {
 }
 
 h2 {
-    font-family: serif;
-    font-weight: 900;
-    color: #557799;
+    font-family: libre-bodoni, sans-serif;
+    font-weight: 700;
+    color: #7A0000;
     font-size: 2em;
     margin-left: 0.2em;
+    padding-top: 0.4em;
+    line-height: 120%;
 }
 
 p {
     margin: 0em 0em 1em 0.5em;
-    color: #000000;
+    color: #191B22;
     line-height: 1.2em;
+    letter-spacing: 0.025em;
+}
+
+span {
+    font-style: italic;
 }
 
 section.secondary-story h2 {
@@ -60,7 +70,7 @@ section.tertiary-story h2 {
     font-size: 1.2em;
     font-weight: bold;
     margin: 0.3em;
-    border-top: solid 1px #557799;
+    border-top: solid 1px #045650;
 }
 
 aside h2 {
@@ -76,7 +86,7 @@ figcaption {
 }
 
 aside {
-    background-color: #CBCFFF;
+    background-color: #A7CED2;
     padding: 1em 0.5em;
 }
 
@@ -85,14 +95,14 @@ aside p {
 }
 
 footer {
-    background-color: #557799;
-    height: 2em;
-    padding-top: 0.75em;
+    background-color: #045650;
+    height: 3em;
+    padding: 1em 0 0 0.5em;
     box-sizing: border-box;
 }
 
 footer p {
-    color: #FFFFFF;
+    color: #F1E7E5;
 }
 
 div.container, div.home-container {
